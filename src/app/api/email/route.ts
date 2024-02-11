@@ -1,5 +1,9 @@
+import { renderToReadableStream } from 'react-dom/server';
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { renderToStaticMarkup } from 'react-dom/server';
+// Other import statements...
+
 const resend = new Resend(process.env.RESEND_KEY);
 
 export async function POST(req: Request) {
