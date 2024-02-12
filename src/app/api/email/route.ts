@@ -4,7 +4,7 @@ import { Resend } from 'resend';
 import { renderToStaticMarkup } from 'react-dom/server';
 // Other import statements...
 
-const resend = new Resend(process.env.RESEND_KEY);
+const resend = new Resend('re_L8giSZCs_3kdyutYsc29gyoD8ThtWymy2');
 
 export async function POST(req: Request) {
     const { name, email, message } = await req.json();
