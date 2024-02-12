@@ -10,6 +10,7 @@ interface NavbarProps {}
 const Navbar: FC<NavbarProps> = ({}) => {
     const { setFormVisibility } = useContact();
     const { showMenu, showMenuVisibility } = useMenu();
+    return null;
 
 };
 
